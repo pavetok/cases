@@ -1,7 +1,9 @@
 Cases
 =====
 Cases is a test cases generation tool.
+
 It allows to create a collection of test cases.
+
 Possible options:
 * "each choice" cases
 * "pairwise" cases
@@ -10,8 +12,11 @@ Possible options:
 Installation
 ============
 Install with setup.py:
+
     python setup.py install
+
 Install with pip:
+
     pip install git+https://github.com/pavetok/cases.git
 
 Example
