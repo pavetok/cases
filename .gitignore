@@ -1,0 +1,5 @@
+# Files
+*.py[cod]
+
+# Directories
+.idea
