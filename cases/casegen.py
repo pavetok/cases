@@ -40,7 +40,7 @@ def get_negative_cases(**kwargs):
     "each negative value in separate case" algorithm.
     """
     for attr, set_of_values in kwargs.iteritems():
-        defaults = {key: kwargs[key][-1] for key in kwargs}
+        defaults = {key: kwargs[key][-1]['default'] for key in kwargs}
         defaults.pop(attr)
         for value in set_of_values[:-1]:
             case = Case()

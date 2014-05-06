@@ -25,9 +25,9 @@ valid_mix = mixgen(string.ascii_letters)
 invalid_mix = mixgen(string.punctuation)
 illegal_username = valid_mix(1) + invalid_mix(1) + valid_mix(1)
 negative_cases = get_negative_cases(
-    username = (empty, valid_mix(65), illegal_username, valid_mix(5)),
-    gender = ('bla', 'male'),
-    age = (0, 123, 25)
+    username = (empty, valid_mix(65), illegal_username, {'default': valid_mix(5)}),
+    gender = ('bla', {'default': 'male'}),
+    age = (0, 123,  {'default': 25})
 )
 
 
