@@ -22,6 +22,7 @@ Install with pip:
 Example
 =======
 ```python
+from cases import get_each_choice_cases
 
 each_choice_cases = get_each_choice_cases(
     username = ('adaline', 'keegan'),

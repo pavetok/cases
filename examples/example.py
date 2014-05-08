@@ -43,3 +43,26 @@ print('-'*50)
 for case in negative_cases:
     print(case.__dict__)
 
+
+# --------------------------------------------------
+# {'username': 'F', 'gender': 'male', 'age': 1}
+# {'username': 'JDGxIRYvGyCmDdljxMQXNsXhtRMFevMFNrbHmNGEdSFhJiFeLVdMEzZiMuSPUigs', 'gender': 'female', 'age': 17}
+# {'username': 'JDGxIRYvGyCmDdljxMQXNsXhtRMFevMFNrbHmNGEdSFhJiFeLVdMEzZiMuSPUigs', 'gender': 'male', 'age': 18}
+# {'username': 'JDGxIRYvGyCmDdljxMQXNsXhtRMFevMFNrbHmNGEdSFhJiFeLVdMEzZiMuSPUigs', 'gender': 'male', 'age': 122}
+# --------------------------------------------------
+# {'username': '3', 'gender': 'male', 'age': 0.5}
+# {'username': '5153546679344293017936217513851266196118827467042001853312838713', 'gender': 'female', 'age': 0.5}
+# {'username': '5153546679344293017936217513851266196118827467042001853312838713', 'gender': 'male', 'age': 17}
+# {'username': '3', 'gender': 'female', 'age': 17}
+# {'username': '3', 'gender': 'female', 'age': 18}
+# {'username': '5153546679344293017936217513851266196118827467042001853312838713', 'gender': 'male', 'age': 18}
+# {'username': '5153546679344293017936217513851266196118827467042001853312838713', 'gender': 'male', 'age': 122}
+# {'username': '3', 'gender': 'female', 'age': 122}
+# --------------------------------------------------
+# {'username': '', 'gender': {'default': 'male'}, 'age': {'default': 25}}
+# {'username': 'lxiCPWhyIjTzpTuxCPUpnoBItObSHDrxgzJKxCZzowYFUFnZtdYtRmLSgWDmowtDx', 'gender': {'default': 'male'}, 'age': {'default': 25}}
+# {'username': 'L?R', 'gender': {'default': 'male'}, 'age': {'default': 25}}
+# {'username': {'default': 'aVCyn'}, 'gender': 'bla', 'age': {'default': 25}}
+# {'username': {'default': 'aVCyn'}, 'gender': {'default': 'male'}, 'age': 0}
+# {'username': {'default': 'aVCyn'}, 'gender': {'default': 'male'}, 'age': 123}
+
