@@ -10,7 +10,7 @@ setup(
     url='https://github.com/pavetok/cases',
     packages=find_packages(),
     license='MIT',
-    long_description=open('README.md').read(),
+    long_description=open('README.rst').read(),
     install_requires = [
         'AllPairs==2.0.1'
     ],

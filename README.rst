@@ -9,13 +9,13 @@ Possible options:
 
 Installation
 ------------
+Install with pip: ::
+
+    pip install cases
+
 Install with setup.py: ::
 
     python setup.py install
-
-Install with pip: ::
-
-    pip install git+https://github.com/pavetok/cases.git
 
 Example
 -------
