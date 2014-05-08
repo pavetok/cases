@@ -1,14 +1,15 @@
 # -*- coding:utf-8 -*-
 from setuptools import setup, find_packages
+import cases
 
 setup(
     name='cases',
-    version='0.1',
+    version=cases.__version__,
     description='Test cases generation tool',
     author='Pavel Vetokhin',
     url='https://github.com/pavetok/cases',
     packages=find_packages(),
-    license='MIT License',
+    license='MIT',
     long_description=open('README.md').read(),
     install_requires = [
         'AllPairs==2.0.1'

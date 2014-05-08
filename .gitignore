@@ -3,3 +3,5 @@
 
 # Directories
 .idea
+dist
+*egg*
