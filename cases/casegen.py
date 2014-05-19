@@ -56,5 +56,5 @@ def mixgen(sample):
     """
     sample = list(sample)
     def mix(length):
-        return ''.join(str(random.choice(sample)) for _ in xrange(length))
+        return ''.join(unicode(random.choice(sample)) for _ in xrange(length))
     return mix
