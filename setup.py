@@ -7,7 +7,7 @@ __version__ = '0.1.3'
 
 setup(
     name='cases',
-    version=cases.__version__,
+    version=__version__,
     description='Test cases generation tool',
     author='Pavel Vetokhin',
     url='https://github.com/pavetok/cases',
