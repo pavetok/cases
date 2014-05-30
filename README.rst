@@ -21,9 +21,11 @@ Example
 -------
 ::
 
-    from cases import get_each_choice_cases
+    from cases import Cases
 
-    each_choice_cases = get_each_choice_cases(
+    cases = Cases()
+
+    each_choice_cases = cases.each_choice_cases_gen(
         username = ('adaline', 'keegan'),
         gender = ('male', 'female'),
         age = (1, 17, 18, 122) # 122 - oldest person by Guinness World Records

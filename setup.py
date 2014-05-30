@@ -2,7 +2,7 @@
 from setuptools import setup, find_packages
 
 
-__version__ = '0.1.3'
+__version__ = '0.1.4'
 
 
 setup(
@@ -12,7 +12,7 @@ setup(
     author='Pavel Vetokhin',
     url='https://github.com/pavetok/cases',
     packages=find_packages(),
-    license='MIT',
+    license='MIT License',
     long_description=open('README.rst').read(),
     install_requires = [
         'AllPairs==2.0.1'

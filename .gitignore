@@ -1,7 +1,4 @@
-# Files
 *.py[cod]
-
-# Directories
 .idea
 dist
 *egg*
