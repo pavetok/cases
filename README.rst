@@ -25,7 +25,7 @@ Example
 
     cases = Cases()
 
-    each_choice_cases = cases.each_choice_cases_gen(
+    each_choice_cases = cases.get_each_choice(
         username = ('adaline', 'keegan'),
         gender = ('male', 'female'),
         age = (1, 17, 18, 122) # 122 - oldest person by Guinness World Records
