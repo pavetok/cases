@@ -7,7 +7,7 @@ cases = Cases()
 
 
 mix = cases.mix_gen(string.ascii_letters)
-each_choice_cases = cases.each_choice_cases_gen(
+each_choice_cases = cases.get_each_choice(
     username = (mix(1), mix(64)),
     gender = ('male', 'female'),
     age = (1, 17, 18, 122) # 122 - oldest person by Guinness World Records
@@ -15,7 +15,7 @@ each_choice_cases = cases.each_choice_cases_gen(
 
 
 mix = cases.mix_gen(string.digits)
-pairwise_cases = cases.pairwise_cases_gen(
+pairwise_cases = cases.get_pairwise(
     username = (mix(1), mix(64)),
     gender = ('male', 'female'),
     age = (0.5, 17, 18, 122) # 122 - oldest person by Guinness World Records
@@ -26,7 +26,7 @@ empty = ''
 valid_mix = cases.mix_gen(string.ascii_letters)
 invalid_mix = cases.mix_gen(string.punctuation)
 illegal_username = valid_mix(1) + invalid_mix(1) + valid_mix(1)
-negative_cases = cases.negative_cases_gen(
+negative_cases = cases.get_negative(
     username = (empty, valid_mix(65), illegal_username, {'default': valid_mix(5)}),
     gender = ('bla', {'default': 'male'}),
     age = (0, 123,  {'default': 25})

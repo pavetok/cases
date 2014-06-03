@@ -2,7 +2,7 @@
 from setuptools import setup, find_packages
 
 
-__version__ = '0.1.4'
+__version__ = '0.1.5'
 
 
 setup(
@@ -24,7 +24,6 @@ setup(
         'Intended Audience :: Science/Research',
         'License :: OSI Approved :: MIT License',
         'Natural Language :: English',
-        'Natural Language :: Russian',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
         'Topic :: Software Development :: Testing',

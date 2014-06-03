@@ -18,7 +18,7 @@ class Cases(object):
     def set_cases_class(self, cls):
         self.CasesClass = cls
 
-    def each_choice_cases_gen(self, **kwargs):
+    def get_each_choice(self, **kwargs):
         """Returns a generator that generates positive cases by
         "each choice" algorithm.
         """
@@ -31,7 +31,7 @@ class Cases(object):
                 setattr(case, attr, value)
             yield case
 
-    def pairwise_cases_gen(self, **kwargs):
+    def get_pairwise(self, **kwargs):
         """Returns a generator that generates positive cases by
         "pairwise" algorithm.
         """
@@ -41,7 +41,7 @@ class Cases(object):
                 setattr(case, attr, value)
             yield case
 
-    def negative_cases_gen(self, **kwargs):
+    def get_negative(self, **kwargs):
         """Returns a generator that generates negative cases by
         "each negative value in separate case" algorithm.
         """
