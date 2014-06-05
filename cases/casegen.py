@@ -22,7 +22,7 @@ class Cases(object):
         """Returns a generator that generates positive cases by
         "each choice" algorithm.
         """
-        defaults = {attr: random.choice(kwargs[attr]) for attr in kwargs}
+        defaults = {attr: kwargs[attr][0] for attr in kwargs}
         for set_of_values in izip_longest(*kwargs.values()):
             case = self.CasesClass()
             for attr, value in izip(kwargs.keys(), set_of_values):

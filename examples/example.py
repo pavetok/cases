@@ -47,24 +47,24 @@ for case in negative_cases:
 
 
 # --------------------------------------------------
-# {'username': 'F', 'gender': 'male', 'age': 1}
-# {'username': 'JDGxIRYvGyCmDdljxMQXNsXhtRMFevMFNrbHmNGEdSFhJiFeLVdMEzZiMuSPUigs', 'gender': 'female', 'age': 17}
-# {'username': 'JDGxIRYvGyCmDdljxMQXNsXhtRMFevMFNrbHmNGEdSFhJiFeLVdMEzZiMuSPUigs', 'gender': 'male', 'age': 18}
-# {'username': 'JDGxIRYvGyCmDdljxMQXNsXhtRMFevMFNrbHmNGEdSFhJiFeLVdMEzZiMuSPUigs', 'gender': 'male', 'age': 122}
+# {'username': u't', 'gender': 'male', 'age': 1}
+# {'username': u'qllaBHSVkPwRKtAARqbHNRXaCIbVUygTTJBicHAxqDtLYwUwkNEBjkVFPQWIdcRL', 'gender': 'female', 'age': 17}
+# {'username': u't', 'gender': 'male', 'age': 18}
+# {'username': u't', 'gender': 'male', 'age': 122}
 # --------------------------------------------------
-# {'username': '3', 'gender': 'male', 'age': 0.5}
-# {'username': '5153546679344293017936217513851266196118827467042001853312838713', 'gender': 'female', 'age': 0.5}
-# {'username': '5153546679344293017936217513851266196118827467042001853312838713', 'gender': 'male', 'age': 17}
-# {'username': '3', 'gender': 'female', 'age': 17}
-# {'username': '3', 'gender': 'female', 'age': 18}
-# {'username': '5153546679344293017936217513851266196118827467042001853312838713', 'gender': 'male', 'age': 18}
-# {'username': '5153546679344293017936217513851266196118827467042001853312838713', 'gender': 'male', 'age': 122}
-# {'username': '3', 'gender': 'female', 'age': 122}
+# {'username': u'5', 'gender': 'male', 'age': 0.5}
+# {'username': u'5535853260485795223224600570751986899318115935733469903141532756', 'gender': 'female', 'age': 0.5}
+# {'username': u'5535853260485795223224600570751986899318115935733469903141532756', 'gender': 'male', 'age': 17}
+# {'username': u'5', 'gender': 'female', 'age': 17}
+# {'username': u'5', 'gender': 'female', 'age': 18}
+# {'username': u'5535853260485795223224600570751986899318115935733469903141532756', 'gender': 'male', 'age': 18}
+# {'username': u'5535853260485795223224600570751986899318115935733469903141532756', 'gender': 'male', 'age': 122}
+# {'username': u'5', 'gender': 'female', 'age': 122}
 # --------------------------------------------------
-# {'username': '', 'gender': {'default': 'male'}, 'age': {'default': 25}}
-# {'username': 'lxiCPWhyIjTzpTuxCPUpnoBItObSHDrxgzJKxCZzowYFUFnZtdYtRmLSgWDmowtDx', 'gender': {'default': 'male'}, 'age': {'default': 25}}
-# {'username': 'L?R', 'gender': {'default': 'male'}, 'age': {'default': 25}}
-# {'username': {'default': 'aVCyn'}, 'gender': 'bla', 'age': {'default': 25}}
-# {'username': {'default': 'aVCyn'}, 'gender': {'default': 'male'}, 'age': 0}
-# {'username': {'default': 'aVCyn'}, 'gender': {'default': 'male'}, 'age': 123}
+# {'username': '', 'gender': 'male', 'age': 25}
+# {'username': u'wwoYdvcmKEJerTZsaaMJTfYdNyjJmKFkGWopJMUQdQKLPrOmbVBjijLeoLaSGBzJE', 'gender': 'male', 'age': 25}
+# {'username': u'm`b', 'gender': 'male', 'age': 25}
+# {'username': u'lzRTB', 'gender': 'bla', 'age': 25}
+# {'username': u'lzRTB', 'gender': 'male', 'age': 0}
+# {'username': u'lzRTB', 'gender': 'male', 'age': 123}
 

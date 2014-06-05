@@ -36,5 +36,5 @@ Example
 
     # ('adaline', 'male', 1)
     # ('keegan', 'female', 17)
-    # ('keegan', 'male', 18)
-    # ('keegan', 'male', 122)
+    # ('adaline', 'male', 18)
+    # ('adaline', 'male', 122)
