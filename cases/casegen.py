@@ -18,6 +18,13 @@ class Cases(object):
     def set_cases_class(self, cls):
         self.CasesClass = cls
 
+    def get_one(self, **kwargs):
+        """Returns a one case."""
+        case = self.CasesClass()
+        for attr, value in kwargs.iteritems():
+            setattr(case, attr, value)
+        return case
+
     def get_each_choice(self, **kwargs):
         """Returns a generator that generates positive cases by
         "each choice" algorithm.
@@ -55,7 +62,7 @@ class Cases(object):
                     setattr(case, key, defaults[key])
                 yield case
 
-    def mix_gen(self, sample):
+    def get_mix_gen(self, sample):
         """Returns function that returns sequence of characters of a
         given length from a given sample
         """
