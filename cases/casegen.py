@@ -18,6 +18,9 @@ class Cases(object):
     def set_cases_class(self, cls):
         self.CasesClass = cls
 
+    def set_default_class(self):
+        self.CasesClass = Case
+
     def get_one(self, **kwargs):
         """Returns a one case."""
         case = self.CasesClass()
