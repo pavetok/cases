@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+from __future__ import unicode_literals
 from metacomm.combinatorics.all_pairs2 import all_pairs2 as allpairs
 from itertools import izip, izip_longest
 import random
@@ -7,7 +8,8 @@ import json
 
 class Case(object):
     def __repr__(self):
-        return json.dumps(self.__dict__)
+        return json.dumps({key: value for key, value in self.__dict__.iteritems() \
+                           if value is not None})
 
 
 class Cases(object):
@@ -56,7 +58,7 @@ class Cases(object):
         "each negative value in separate case" algorithm.
         """
         for attr, set_of_values in kwargs.iteritems():
-            defaults = {key: kwargs[key][-1]['default'] for key in kwargs}
+            defaults = {key: kwargs[key][-1]["default"] for key in kwargs}
             defaults.pop(attr)
             for value in set_of_values[:-1]:
                 case = self.CasesClass()
@@ -70,5 +72,5 @@ class Cases(object):
         given length from a given sample
         """
         def mix(length):
-            return ''.join(unicode(random.choice(list(sample))) for _ in xrange(length))
+            return "".join(random.choice(sample) for _ in xrange(length))
         return mix
