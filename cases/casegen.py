@@ -17,55 +17,49 @@ class Cases(object):
     def __init__(self):
         self._CasesClass = Case
 
-    def set_class(self, cls):
-        self._CasesClass = cls
-
-    def set_default(self):
-        self._CasesClass = Case
-
-    def get_one(self, **kwargs):
+    def get_one(self, cls=None, **kwargs):
         """Returns a one case."""
-        case = self._CasesClass()
+        case = cls() if cls else self._CasesClass()
         for attr, value in kwargs.iteritems():
             setattr(case, attr, value)
         return case
 
-    def get_each_choice(self, **kwargs):
-        """Returns all positive cases by "each choice" algorithm."""
-        result = []
+    def get_each_choice(self, cls=None, **kwargs):
+        """Returns a generator that generates positive cases by
+        "each choice" algorithm.
+        """
         defaults = {attr: kwargs[attr][0] for attr in kwargs}
         for set_of_values in izip_longest(*kwargs.values()):
-            case = self._CasesClass()
+            case = cls() if cls else self._CasesClass()
             for attr, value in izip(kwargs.keys(), set_of_values):
                 if value is None:
                     value = defaults[attr]
                 setattr(case, attr, value)
-            result.append(case)
-        return result
+            yield case
 
-    def get_pairwise(self, **kwargs):
-        """Returns all positive cases by "pairwise" algorithm."""
-        result = []
+    def get_pairwise(self, cls=None, **kwargs):
+        """Returns a generator that generates positive cases by
+        "pairwise" algorithm.
+        """
         for set_of_values in allpairs(kwargs.values()):
-            case = self._CasesClass()
+            case = cls() if cls else self._CasesClass()
             for attr, value in izip(kwargs.keys(), set_of_values):
                 setattr(case, attr, value)
-            result.append(case)
-        return result
+            yield case
 
-    def get_negative(self, **kwargs):
-        """Returns all negative cases by "each negative value in separate case" algorithm."""
-        result = []
+    def get_negative(self, cls=None, **kwargs):
+        """Returns a generator that generates negative cases by
+        "each negative value in separate case" algorithm.
+        """
         for attr, set_of_values in kwargs.iteritems():
             defaults = {key: kwargs[key][-1]["default"] for key in kwargs}
             defaults.pop(attr)
             for value in set_of_values[:-1]:
-                case = self._CasesClass()
+                case = cls() if cls else self._CasesClass()
                 setattr(case, attr, value)
                 for key in defaults:
                     setattr(case, key, defaults[key])
-                result.append(case)
-        return result
+                yield case
 
     def get_mix_gen(self, sample):
         """Returns function that returns sequence of characters of a
