@@ -5,6 +5,10 @@ from setuptools import setup, find_packages
 __version__ = '0.1.13'
 
 
+with open('README.rst') as f:
+    long_description = f.read()
+
+
 setup(
     name='cases',
     version=__version__,
@@ -13,7 +17,7 @@ setup(
     url='https://github.com/pavetok/cases',
     packages=find_packages(),
     license='MIT License',
-    long_description=open('README.rst').read(),
+    long_description=long_description,
     install_requires = [
         'AllPairs==2.0.1'
     ],
