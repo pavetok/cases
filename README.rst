@@ -9,17 +9,17 @@ Possible options:
 
 Installation
 ------------
-Install with pip: ::
+Install with pip::
 
     pip install cases
 
-Install with setup.py: ::
+Install with setup.py::
 
     python setup.py install
 
 Example
 -------
-::
+.. code-block:: python
 
     from cases import Cases
 

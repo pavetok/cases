@@ -1,4 +1,6 @@
+.idea/
+dist/
+build/
+venv/
 *.py[cod]
-.idea
-dist
 *egg*
